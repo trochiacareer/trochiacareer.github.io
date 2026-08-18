@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pyxidacareer.github.io/sitemap.xml
+Sitemap: https://trochiacareer.github.io/sitemap.xml
