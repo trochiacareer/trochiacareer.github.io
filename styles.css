@@ -64,10 +64,10 @@ nav{height:80px;display:flex;align-items:center;gap:22px}
 .process-card h3{font-size:1.3rem;margin:9px 0 7px}
 .process-card p{font-size:.84rem;color:var(--muted);margin:0}
 .prices{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.price{border:1px solid var(--line);border-radius:18px;background:#fff;padding:24px;display:flex;flex-direction:column}
+.price{border:1px solid var(--line);border-radius:18px;background:#fff;padding:24px;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(45,71,54,.035)}
 .price h3{text-align:center;font-size:1.32rem;line-height:1.05;margin:0}
 .age{text-align:center;font-size:.68rem;color:var(--muted);text-transform:uppercase;margin-top:5px}
-.amount{text-align:center;font:700 2.8rem/1 "Cormorant Garamond",serif;color:var(--green);margin:16px 0}
+.amount{text-align:center;font:700 2.35rem/1 "Cormorant Garamond",serif;color:var(--green);margin:13px 0 16px;letter-spacing:-.02em}
 .price ul{font-size:.79rem;padding-left:18px;margin:0}
 .price li{margin:7px 0}
 .about-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:44px;align-items:center}
