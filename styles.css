@@ -1,4 +1,3 @@
-
 :root{
   --bg:#fffdfa;--cream:#f7efe5;--cream2:#fbf6ef;--line:#e7d8c8;--ink:#202924;
   --muted:#66706a;--green:#2d4736;--green2:#3b5d48;--terr:#c97959;--shadow:0 16px 40px rgba(45,71,54,.08)
@@ -37,9 +36,9 @@ nav{height:80px;display:flex;align-items:center;gap:22px}
 .mobile-menu a:last-child{border-bottom:none}
 .hero{background:linear-gradient(180deg,#fffdfa,#fbf4eb);border-bottom:1px solid var(--line)}
 .hero-grid{min-height:590px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.8rem,5vw,4.55rem);line-height:.95;letter-spacing:-.03em;margin:8px 0 22px}
+.hero h1{font-size:clamp(2.45rem,4.25vw,3.9rem);line-height:1;letter-spacing:-.025em;margin:10px 0 20px}
 .hero h1 span{display:block;color:var(--terr);font-style:italic;font-weight:500}
-.hero p{font-size:1.05rem;max-width:640px;color:var(--muted)}
+.hero p{font-size:1.02rem;max-width:640px;color:var(--muted)}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
 .hero-panel{border:1px solid var(--line);border-radius:28px;background:var(--cream);padding:34px;box-shadow:var(--shadow)}
 .hero-logo{text-align:center}
@@ -70,15 +69,17 @@ nav{height:80px;display:flex;align-items:center;gap:22px}
 .amount{text-align:center;font:700 2.35rem/1 "Cormorant Garamond",serif;color:var(--green);margin:13px 0 16px;letter-spacing:-.02em}
 .price ul{font-size:.79rem;padding-left:18px;margin:0}
 .price li{margin:7px 0}
-.about-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:44px;align-items:center}
-.about-card{background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:28px}
+.about-grid{display:grid;grid-template-columns:.68fr 1.32fr;gap:48px;align-items:start}
+.about-card{background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:30px}
 .about-card .monogram{width:96px;height:96px}
 .about-card blockquote{font:600 1.5rem/1.2 "Cormorant Garamond",serif;margin:20px 0 0}
-.about-copy h2{font-size:2.8rem;line-height:1;margin:6px 0 16px}
-.about-copy p{color:var(--muted)}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
-.fact{border-top:2px solid var(--terr);padding-top:9px;font-size:.76rem}
-.fact b{display:block;color:var(--green)}
+.about-copy h2{font-size:2.65rem;line-height:1;margin:6px 0 6px}
+.about-role{font-size:.82rem;font-weight:800;color:var(--green);margin-bottom:18px}
+.about-copy p{color:var(--muted);margin:0 0 14px}
+.about-benefit{padding:15px 17px;border-left:3px solid var(--terr);background:#fff;border-radius:0 12px 12px 0;color:var(--ink)!important;margin-top:18px!important}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.fact{border-top:2px solid var(--terr);padding-top:10px;font-size:.76rem;color:var(--muted)}
+.fact b{display:block;color:var(--green);margin-bottom:3px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .faq details{border-bottom:1px solid var(--line);padding:14px 0}
 .faq summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:12px}
@@ -140,8 +141,8 @@ footer{background:var(--green);color:#f7f2ed;padding:38px 0}
   .brand b{font-size:1.08rem}
   .brand small{display:none}
   .hero-grid{min-height:auto;padding:40px 0 34px;gap:28px}
-  .hero h1{font-size:2.72rem}
-  .hero p{font-size:.96rem}
+  .hero h1{font-size:2.3rem;line-height:1.02}
+  .hero p{font-size:.94rem}
   .hero-panel{padding:24px;border-radius:22px}
   .hero-logo .monogram{width:120px;height:120px}
   .hero-wordmark{font-size:1.95rem}
@@ -160,7 +161,7 @@ footer{background:var(--green);color:#f7f2ed;padding:38px 0}
   }
   .prices::-webkit-scrollbar{display:none}
   .price{min-width:84%;scroll-snap-align:start;padding:22px}
-  .about-copy h2{font-size:2.45rem}
+  .about-copy h2{font-size:2.35rem}
   .facts{grid-template-columns:1fr}
   .contact{padding:22px}
   .foot{flex-direction:column}
