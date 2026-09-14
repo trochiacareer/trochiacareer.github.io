@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Trochia Career logo mark">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.2" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#c97959"/></marker>
+  </defs>
+  <g fill="none" stroke="#c97959" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+    <path d="M31 89 C18 72 17 48 29 30"/>
+    <path d="M89 89 C102 72 103 48 91 30"/>
+    <path d="M25 79c-7-2-10-7-11-12 6 0 11 3 14 8"/>
+    <path d="M22 66c-7-3-9-8-9-13 6 1 10 4 13 9"/>
+    <path d="M23 52c-6-4-7-9-6-14 6 2 9 6 11 11"/>
+    <path d="M28 39c-5-5-5-10-3-15 5 3 8 7 9 12"/>
+    <path d="M95 79c7-2 10-7 11-12-6 0-11 3-14 8"/>
+    <path d="M98 66c7-3 9-8 9-13-6 1-10 4-13 9"/>
+    <path d="M97 52c6-4 7-9 6-14-6 2-9 6-11 11"/>
+    <path d="M92 39c5-5 5-10 3-15-5 3-8 7-9 12"/>
+  </g>
+  <text x="59" y="86" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="600" fill="#2d4736">T</text>
+  <path d="M82 78 C61 72 43 61 45 45 C47 29 62 19 81 24 C92 27 99 35 101 45" fill="none" stroke="#c97959" stroke-width="3.1" stroke-linecap="round" marker-end="url(#arrow)"/>
+</svg>
