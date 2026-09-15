@@ -1,12 +1,30 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-  /* Use the approved Trochia Career logo as a transparent, integrated page asset */
+  /* Restore the previously agreed Trochia Career logo: T, trajectory and target */
+  const agreedLogo = `
+    <g style="display:block">
+      <circle cx="60" cy="60" r="56" fill="#fdf6eb" stroke="#dcbf9f" stroke-width="1" opacity=".95"/>
+      <circle cx="60" cy="60" r="53.5" fill="none" stroke="#dcbf9f" stroke-width=".55" opacity=".7"/>
+      <g fill="none" stroke="#d7b896" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" opacity=".85">
+        <path d="M23 91 C15 77 15 58 23 43"/>
+        <path d="M97 91 C105 77 105 58 97 43"/>
+        <path d="M20 79c-5-1-8-4-10-8 5 0 9 2 12 5"/><path d="M19 68c-5-2-7-5-8-9 5 1 8 3 10 6"/><path d="M20 56c-4-3-5-6-4-10 4 2 7 5 8 8"/><path d="M23 46c-3-4-3-7-2-10 4 2 6 5 7 8"/>
+        <path d="M100 79c5-1 8-4 10-8-5 0-9 2-12 5"/><path d="M101 68c5-2 7-5 8-9-5 1-8 3-10 6"/><path d="M100 56c4-3 5-6 4-10-4 2-7 5-8 8"/><path d="M97 46c3-4 3-7 2-10-4 2-6 5-7 8"/>
+      </g>
+      <text x="58" y="77" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="69" font-weight="600" fill="#173f31">T</text>
+      <path d="M50 39 C38 40 31 49 32 60 C33 75 46 84 61 84 C76 84 84 75 89 63 C92 56 93 49 93 44" fill="none" stroke="#b85a21" stroke-width="3.4" stroke-linecap="round"/>
+      <g fill="#fdf6eb" stroke="#b85a21" stroke-width="1.9">
+        <circle cx="93" cy="39" r="9"/>
+        <circle cx="93" cy="39" r="5.8"/>
+        <circle cx="93" cy="39" r="2.7"/>
+      </g>
+      <circle cx="93" cy="39" r="2.3" fill="#b85a21" stroke="none"/>
+    </g>`;
+
   document.querySelectorAll('svg.monogram').forEach(function(svg){
-    svg.innerHTML = '';
-    svg.style.backgroundImage = "url('logo-integrated.webp?v=20260915-7')";
-    svg.style.backgroundPosition = 'center';
-    svg.style.backgroundRepeat = 'no-repeat';
-    svg.style.backgroundSize = 'contain';
+    svg.setAttribute('viewBox','0 0 120 120');
+    svg.style.backgroundImage = 'none';
+    svg.innerHTML = agreedLogo;
   });
 
   if (window.lucide) lucide.createIcons();
