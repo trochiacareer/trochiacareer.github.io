@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!document.querySelector('link[data-process-flow]')) {
       const processCss = document.createElement('link');
       processCss.rel = 'stylesheet';
-      processCss.href = 'process-flow.css?v=20260915-2';
+      processCss.href = 'process-flow.css?v=20260915-3';
       processCss.setAttribute('data-process-flow','true');
       document.head.appendChild(processCss);
     }
