@@ -1,18 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-  /* Trochia Career monogram: trajectory ending on a clear target */
-  const monogramMarkup = `
-    <text x="36" y="54" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="52" font-weight="600" fill="#2d4736">T</text>
-    <path d="M52 16C31 10 14 22 14 40C14 54 26 63 40 59" fill="none" stroke="#c97959" stroke-width="1.8" stroke-linecap="round"/>
-    <circle cx="62" cy="35" r="7" fill="#fffdfa" stroke="#c97959" stroke-width="1.6"/>
-    <circle cx="62" cy="35" r="4.5" fill="none" stroke="#c97959" stroke-width="1.6"/>
-    <circle cx="62" cy="35" r="2.1" fill="#c97959"/>
-    <path d="M36 60C48 59 55 53 59.2 43" fill="none" stroke="#c97959" stroke-width="1.9" stroke-linecap="round"/>
-    <path d="M57.5 43.3L62 35L64.1 43.9Z" fill="#c97959"/>
-  `;
+  /* Trochia Career logo: force the approved target version and bypass old cached artwork */
   document.querySelectorAll('svg.monogram').forEach(function(svg){
-    svg.setAttribute('viewBox','0 0 72 72');
-    svg.innerHTML = monogramMarkup;
+    svg.style.backgroundImage = "url('logo-mark-target.svg?v=20260915-4')";
+    svg.style.backgroundPosition = 'center';
+    svg.style.backgroundRepeat = 'no-repeat';
+    svg.style.backgroundSize = 'contain';
   });
 
   if (window.lucide) lucide.createIcons();
