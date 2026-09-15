@@ -1,11 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-  /* Restore the pre-target Trochia Career monogram: T with a minimal upward trajectory */
+  /* Restore the original elegant Trochia Career monogram with a thin upward trajectory */
   const originalLogo = `
     <g style="display:block">
       <text x="36" y="54" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="52" font-weight="600" fill="#2d4736">T</text>
-      <path d="M53 22a24 24 0 1 0 3 34" fill="none" stroke="#c97959" stroke-width="4" stroke-linecap="round"/>
-      <path d="M56 56l-7-1 3-6z" fill="#c97959"/>
+      <path d="M52 16C31 10 14 22 14 40C14 54 26 63 40 59" fill="none" stroke="#c97959" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M36 60C49 59 59 48 64 34" fill="none" stroke="#c97959" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M64 29L59 35L66 36Z" fill="#c97959"/>
     </g>`;
 
   document.querySelectorAll('svg.monogram').forEach(function(svg){
