@@ -20,10 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!document.querySelector('link[data-process-flow]')) {
       const processCss = document.createElement('link');
       processCss.rel = 'stylesheet';
-      processCss.href = 'process-flow.css?v=20260915-1';
+      processCss.href = 'process-flow.css?v=20260915-2';
       processCss.setAttribute('data-process-flow','true');
       document.head.appendChild(processCss);
     }
+
+    const icon1 = `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 15h40a7 7 0 0 1 7 7v18a7 7 0 0 1-7 7H30L18 56v-9h-6a7 7 0 0 1-7-7V22a7 7 0 0 1 7-7Z" fill="#fff8ef" stroke="#234b3d" stroke-width="3" stroke-linejoin="round"/><circle cx="24" cy="31" r="3" fill="#c97959"/><circle cx="32" cy="31" r="3" fill="#c97959"/><circle cx="40" cy="31" r="3" fill="#c97959"/></svg>`;
+    const icon2 = `<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="13" y="14" width="38" height="42" rx="5" fill="#fff8ef" stroke="#234b3d" stroke-width="3"/><path d="M25 14v-3a7 7 0 0 1 14 0v3" fill="none" stroke="#234b3d" stroke-width="3" stroke-linecap="round"/><rect x="21" y="24" width="11" height="7" rx="1.5" fill="#c97959" opacity=".9"/><path d="m39 26 3 3 6-7" fill="none" stroke="#234b3d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 39h22M21 46h17" stroke="#234b3d" stroke-width="2.6" stroke-linecap="round"/></svg>`;
+    const icon3 = `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 51h44" stroke="#234b3d" stroke-width="2.7" stroke-linecap="round"/><rect x="14" y="35" width="8" height="16" rx="1.5" fill="#6f8879"/><rect x="27" y="27" width="8" height="24" rx="1.5" fill="#d6b48d"/><rect x="40" y="18" width="8" height="33" rx="1.5" fill="#c97959"/><path d="M13 28c10-1 20-5 28-12l7-7" fill="none" stroke="#c97959" stroke-width="3" stroke-linecap="round"/><path d="m44 9 7-1-2 7" fill="none" stroke="#c97959" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    const icon4 = `<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="27" r="9" fill="#fff8ef" stroke="#234b3d" stroke-width="3"/><path d="M8 51c2-10 8-15 14-15s12 5 14 15" fill="none" stroke="#234b3d" stroke-width="3" stroke-linecap="round"/><circle cx="43" cy="36" r="6" fill="#fff8ef" stroke="#234b3d" stroke-width="2.7"/><path d="M35 52c1.4-6.7 4.8-10 8-10s6.6 3.3 8 10" fill="none" stroke="#234b3d" stroke-width="2.7" stroke-linecap="round"/><path d="M35 12h15a7 7 0 0 1 7 7v6a7 7 0 0 1-7 7h-6l-6 5v-5h-3a7 7 0 0 1-7-7v-6a7 7 0 0 1 7-7Z" fill="#fff8ef" stroke="#c97959" stroke-width="2.7" stroke-linejoin="round"/></svg>`;
+    const icon5 = `<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M31 9v47" stroke="#234b3d" stroke-width="3" stroke-linecap="round"/><path d="M14 16h30l8 8-8 8H14l-8-8 8-8Z" fill="#234b3d"/><path d="M50 37H22l-8 8 8 8h28l8-8-8-8Z" fill="#c97959"/><path d="M20 24h22M26 45h20" stroke="#fff8ef" stroke-width="2.4" stroke-linecap="round"/></svg>`;
+    const icon6 = `<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="29" cy="35" r="22" fill="#fff8ef" stroke="#234b3d" stroke-width="3"/><circle cx="29" cy="35" r="14" fill="none" stroke="#234b3d" stroke-width="3"/><circle cx="29" cy="35" r="6" fill="#c97959"/><path d="M33 31 53 11" stroke="#c97959" stroke-width="4" stroke-linecap="round"/><path d="M49 10h10v10l-5-2-3-3-2-5Z" fill="#c97959"/></svg>`;
 
     processSection.className = 'section process-section';
     processSection.innerHTML = `
@@ -37,42 +44,42 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="process-flow">
             <article class="process-step">
               <div class="process-step-num">01</div>
-              <div class="process-icon"><i data-lucide="message-circle"></i></div>
+              <div class="process-icon">${icon1}</div>
               <h3>Επικοινωνία &amp; ενημέρωση</h3>
               <p>Συζήτηση για τις ανάγκες και τους στόχους.</p>
             </article>
             <div class="process-arrow" aria-hidden="true"></div>
             <article class="process-step">
               <div class="process-step-num">02</div>
-              <div class="process-icon"><i data-lucide="clipboard-check"></i></div>
+              <div class="process-icon">${icon2}</div>
               <h3>Χορήγηση τεστ</h3>
               <p>Συμπλήρωση πιστοποιημένου ψυχομετρικού εργαλείου, όπου ενδείκνυται.</p>
             </article>
             <div class="process-arrow" aria-hidden="true"></div>
             <article class="process-step">
               <div class="process-step-num">03</div>
-              <div class="process-icon"><i data-lucide="bar-chart-3"></i></div>
+              <div class="process-icon">${icon3}</div>
               <h3>Ανάλυση αποτελεσμάτων</h3>
               <p>Επιστημονική επεξεργασία και ερμηνεία.</p>
             </article>
             <div class="process-arrow" aria-hidden="true"></div>
             <article class="process-step">
               <div class="process-step-num">04</div>
-              <div class="process-icon"><i data-lucide="users"></i></div>
+              <div class="process-icon">${icon4}</div>
               <h3>Συμβουλευτική συνεδρία</h3>
               <p>Αναλυτική συζήτηση για τα ευρήματα και τους στόχους.</p>
             </article>
             <div class="process-arrow" aria-hidden="true"></div>
             <article class="process-step">
               <div class="process-step-num">05</div>
-              <div class="process-icon"><i data-lucide="signpost"></i></div>
+              <div class="process-icon">${icon5}</div>
               <h3>Διερεύνηση επιλογών</h3>
               <p>Παρουσίαση εκπαιδευτικών και επαγγελματικών διεξόδων.</p>
             </article>
             <div class="process-arrow" aria-hidden="true"></div>
             <article class="process-step">
               <div class="process-step-num">06</div>
-              <div class="process-icon"><i data-lucide="target"></i></div>
+              <div class="process-icon">${icon6}</div>
               <h3>Σχέδιο δράσης</h3>
               <p>Διαμόρφωση πλάνου για τα επόμενα βήματα.</p>
             </article>
