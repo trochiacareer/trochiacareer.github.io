@@ -8,7 +8,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-
 a{text-decoration:none;color:inherit}
 button,input,textarea{font:inherit}
 img,svg{max-width:100%}
-.monogram{background:url('trochia-logo-orbit-target-v2.svg') center/contain no-repeat;overflow:visible}
+.monogram{background:url('logo-integrated.webp?v=20260915-7') center/contain no-repeat;overflow:visible}
 .monogram>*{display:none}
 .wrap{width:min(1120px,calc(100% - 32px));margin:auto}
 .serif,h1,h2,h3{font-family:"Cormorant Garamond",serif}
