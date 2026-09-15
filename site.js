@@ -1,8 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-  /* Trochia Career logo: force the approved target version and bypass old cached artwork */
+  /* Use the exact approved Trochia Career logo image everywhere the monogram appears */
   document.querySelectorAll('svg.monogram').forEach(function(svg){
-    svg.style.backgroundImage = "url('logo-mark-target.svg?v=20260915-4')";
+    svg.innerHTML = '';
+    svg.style.backgroundImage = "url('logo-approved-exact.svg?v=20260915-1')";
     svg.style.backgroundPosition = 'center';
     svg.style.backgroundRepeat = 'no-repeat';
     svg.style.backgroundSize = 'contain';
