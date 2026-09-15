@@ -1,9 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-  /* Use the exact approved Trochia Career logo image everywhere the monogram appears */
+  /* Use the approved Trochia Career logo as a transparent, integrated page asset */
   document.querySelectorAll('svg.monogram').forEach(function(svg){
     svg.innerHTML = '';
-    svg.style.backgroundImage = "url('logo-approved-exact.svg?v=20260915-1')";
+    svg.style.backgroundImage = "url('logo-integrated.webp?v=20260915-7')";
     svg.style.backgroundPosition = 'center';
     svg.style.backgroundRepeat = 'no-repeat';
     svg.style.backgroundSize = 'contain';
