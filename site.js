@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   /* Restore the original elegant Trochia Career monogram with a thin upward trajectory */
   const originalLogo = `
@@ -14,6 +13,74 @@ document.addEventListener('DOMContentLoaded', function () {
     svg.style.backgroundImage = 'none';
     svg.innerHTML = originalLogo;
   });
+
+  /* Six-step process flow */
+  const processSection = document.getElementById('process');
+  if (processSection) {
+    if (!document.querySelector('link[data-process-flow]')) {
+      const processCss = document.createElement('link');
+      processCss.rel = 'stylesheet';
+      processCss.href = 'process-flow.css?v=20260915-1';
+      processCss.setAttribute('data-process-flow','true');
+      document.head.appendChild(processCss);
+    }
+
+    processSection.className = 'section process-section';
+    processSection.innerHTML = `
+      <div class="wrap">
+        <div class="process-head">
+          <div class="eyebrow">Η διαδικασία</div>
+          <h2 class="process-title">Η διαδικασία βήμα προς βήμα</h2>
+          <p class="process-intro">Μια οργανωμένη πορεία από την πρώτη επικοινωνία μέχρι το σχέδιο δράσης, προσαρμοσμένη στην ηλικία και στις ανάγκες του παιδιού.</p>
+        </div>
+        <div class="process-flow-wrap" aria-label="Η διαδικασία σε έξι βήματα">
+          <div class="process-flow">
+            <article class="process-step">
+              <div class="process-step-num">01</div>
+              <div class="process-icon"><i data-lucide="message-circle"></i></div>
+              <h3>Επικοινωνία &amp; ενημέρωση</h3>
+              <p>Συζήτηση για τις ανάγκες και τους στόχους.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"></div>
+            <article class="process-step">
+              <div class="process-step-num">02</div>
+              <div class="process-icon"><i data-lucide="clipboard-check"></i></div>
+              <h3>Χορήγηση τεστ</h3>
+              <p>Συμπλήρωση πιστοποιημένου ψυχομετρικού εργαλείου, όπου ενδείκνυται.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"></div>
+            <article class="process-step">
+              <div class="process-step-num">03</div>
+              <div class="process-icon"><i data-lucide="bar-chart-3"></i></div>
+              <h3>Ανάλυση αποτελεσμάτων</h3>
+              <p>Επιστημονική επεξεργασία και ερμηνεία.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"></div>
+            <article class="process-step">
+              <div class="process-step-num">04</div>
+              <div class="process-icon"><i data-lucide="users"></i></div>
+              <h3>Συμβουλευτική συνεδρία</h3>
+              <p>Αναλυτική συζήτηση για τα ευρήματα και τους στόχους.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"></div>
+            <article class="process-step">
+              <div class="process-step-num">05</div>
+              <div class="process-icon"><i data-lucide="signpost"></i></div>
+              <h3>Διερεύνηση επιλογών</h3>
+              <p>Παρουσίαση εκπαιδευτικών και επαγγελματικών διεξόδων.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"></div>
+            <article class="process-step">
+              <div class="process-step-num">06</div>
+              <div class="process-icon"><i data-lucide="target"></i></div>
+              <h3>Σχέδιο δράσης</h3>
+              <p>Διαμόρφωση πλάνου για τα επόμενα βήματα.</p>
+            </article>
+          </div>
+        </div>
+        <div class="process-note">Στο κινητό σύρετε οριζόντια για να δείτε όλα τα βήματα.</div>
+      </div>`;
+  }
 
   if (window.lucide) lucide.createIcons();
 
