@@ -14,6 +14,90 @@ document.addEventListener('DOMContentLoaded', function () {
     svg.innerHTML = originalLogo;
   });
 
+  /* Homepage refinements */
+  if (!document.querySelector('link[data-home-refinements]')) {
+    const homeCss = document.createElement('link');
+    homeCss.rel = 'stylesheet';
+    homeCss.href = 'home-refinements.css?v=20260915-1';
+    homeCss.setAttribute('data-home-refinements','true');
+    document.head.appendChild(homeCss);
+  }
+
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    hero.classList.add('refined-home');
+    const heroText = hero.querySelector('.hero-grid > div:first-child > p');
+    if (heroText) {
+      heroText.classList.add('hero-copy-text');
+      heroText.textContent = 'Από το μαθησιακό προφίλ και τα δυνατά σημεία έως τις επιλογές σπουδών, η συμβουλευτική προσαρμόζεται στην ηλικία και στο πραγματικό ερώτημα του παιδιού.';
+    }
+    const quickPoints = hero.querySelector('.quick-points');
+    if (quickPoints) {
+      quickPoints.innerHTML = '<span>Δημοτικό</span><span>Γυμνάσιο</span><span>Λύκειο</span><span>Online συνεδρίες</span>';
+    }
+  }
+
+  const packages = document.getElementById('packages');
+  if (packages) {
+    packages.classList.add('refined-packages');
+    const packageTitle = packages.querySelector('.title');
+    const packageLead = packages.querySelector('.lead');
+    if (packageTitle) packageTitle.textContent = 'Ενδεικτικές επιλογές υποστήριξης';
+    if (packageLead) packageLead.textContent = 'Δεν χρειάζεται να γνωρίζετε εκ των προτέρων ποια επιλογή χρειάζεται το παιδί. Η κατάλληλη διαδικασία προκύπτει από την ηλικία, το αίτημα και το βάθος διερεύνησης που πραγματικά χρειάζεται.';
+    const wrap = packages.querySelector('.wrap');
+    if (wrap && !wrap.querySelector('.package-guidance')) {
+      const guide = document.createElement('div');
+      guide.className = 'package-guidance';
+      guide.innerHTML = '<strong>Δεν είστε σίγουροι ποια επιλογή ταιριάζει;</strong> Δεν χρειάζεται να αποφασίσετε μόνοι σας. <a href="#contact">Πείτε μου τι σας απασχολεί</a> και η επιλογή οργανώνεται με βάση την ανάγκη του παιδιού.';
+      wrap.appendChild(guide);
+    }
+  }
+
+  const about = document.getElementById('about');
+  if (about) {
+    about.classList.add('refined-about');
+    const aboutCopy = about.querySelector('.about-copy');
+    if (aboutCopy) {
+      aboutCopy.innerHTML = `
+        <div class="eyebrow">Ποια είμαι</div>
+        <h2>Δήμητρα Καζάνη</h2>
+        <div class="about-role">Σύμβουλος Εκπαίδευσης &amp; Σταδιοδρομίας</div>
+        <p>Η συμβουλευτική για ένα παιδί δεν ξεκινά από ένα τεστ ή από μια έτοιμη απάντηση. Ξεκινά από την κατανόηση του τρόπου που μαθαίνει, των δυνατών του σημείων, των ενδιαφερόντων του και των αποφάσεων που καλείται πραγματικά να πάρει.</p>
+        <p>Είμαι απόφοιτη του <strong>Τμήματος Φιλοσοφίας, Παιδαγωγικής και Ψυχολογίας του ΕΚΠΑ</strong>, έχω ολοκληρώσει μεταπτυχιακές σπουδές στη <strong>Διδασκαλία της Ελληνικής ως Δεύτερης/Ξένης Γλώσσας στο Πανεπιστήμιο Λευκωσίας</strong> και το ΠΜΣ <strong>«Σχολική Συμβουλευτική &amp; Καθοδήγηση» του ΕΚΠΑ</strong>. Παράλληλα, έχω ολοκληρώσει την πιστοποίηση της <strong>ARISTON Psychometrics</strong> για τη χρήση και συμβουλευτική αξιοποίηση ψυχομετρικών εργαλείων.</p>
+        <p>Στην <strong>Trochia Career</strong> συνδυάζω αυτό το ακαδημαϊκό υπόβαθρο με την επαγγελματική μου εμπειρία στην εκπαίδευση παιδιών και εφήβων, ώστε η διερεύνηση να είναι εξατομικευμένη, κατανοητή και πρακτικά χρήσιμη για κάθε οικογένεια.</p>
+        <p class="about-benefit"><strong>Για τον γονέα αυτό σημαίνει</strong> μια πιο ολοκληρωμένη εικόνα για το παιδί του και συγκεκριμένες κατευθύνσεις για το πώς μπορεί να το υποστηρίξει, χωρίς πίεση, πρόωρες ταμπέλες ή γενικές λύσεις.</p>
+        <div class="facts">
+          <div class="fact"><b>Εκπαιδευτική ματιά</b>Κατανόηση της μαθησιακής πορείας, των δυνατών σημείων και των αναγκών κάθε μαθητή.</div>
+          <div class="fact"><b>Συμβουλευτική προσέγγιση</b>Υποστήριξη στη λήψη αποφάσεων με βάση την ηλικία, το προσωπικό προφίλ και το πραγματικό δίλημμα.</div>
+          <div class="fact"><b>Επιστημονικά εργαλεία</b>Αξιοποίηση κατάλληλων εργαλείων ARISTON όπου ενδείκνυται, πάντα μέσα σε συμβουλευτικό πλαίσιο.</div>
+        </div>`;
+    }
+  }
+
+  const existingProcess = document.getElementById('process');
+  if (existingProcess && !document.getElementById('needs')) {
+    const needs = document.createElement('section');
+    needs.id = 'needs';
+    needs.className = 'section help-section';
+    needs.innerHTML = `
+      <div class="wrap">
+        <div class="help-head">
+          <div class="eyebrow">Όταν το ερώτημα δεν είναι ακόμη ξεκάθαρο</div>
+          <h2>Σας ακούγεται γνώριμο;</h2>
+          <p>Πίσω από μια φράση του παιδιού μπορεί να κρύβεται διαφορετική ανάγκη. Η διερεύνηση ξεκινά από εκεί.</p>
+        </div>
+        <div class="help-grid">
+          <div class="help-card"><div class="help-mark">“</div><blockquote>Δεν ξέρω τι μου αρέσει.</blockquote></div>
+          <div class="help-card"><div class="help-mark">“</div><blockquote>Μου αρέσουν όλα. Πώς να διαλέξω;</blockquote></div>
+          <div class="help-card"><div class="help-mark">“</div><blockquote>Διαβάζω ώρες και πάλι δυσκολεύομαι.</blockquote></div>
+          <div class="help-card"><div class="help-mark">“</div><blockquote>Δεν είμαι καλός σε τίποτα.</blockquote></div>
+          <div class="help-card"><div class="help-mark">“</div><blockquote>Κι αν επιλέξω λάθος;</blockquote></div>
+        </div>
+        <p class="help-close"><strong>Δεν κρύβεται πίσω από όλες αυτές τις φράσεις το ίδιο ερώτημα.</strong> Γι’ αυτό και δεν χρειάζονται όλα τα παιδιά την ίδια συμβουλευτική διαδικασία.</p>
+      </div>`;
+    existingProcess.parentNode.insertBefore(needs, existingProcess);
+  }
+
   /* Age navigation cards */
   const agesSection = document.getElementById('ages');
   if (agesSection) {
