@@ -14,6 +14,52 @@ document.addEventListener('DOMContentLoaded', function () {
     svg.innerHTML = originalLogo;
   });
 
+  /* Age navigation cards */
+  const agesSection = document.getElementById('ages');
+  if (agesSection) {
+    if (!document.querySelector('link[data-age-navigation]')) {
+      const ageCss = document.createElement('link');
+      ageCss.rel = 'stylesheet';
+      ageCss.href = 'age-navigation.css?v=20260915-1';
+      ageCss.setAttribute('data-age-navigation','true');
+      document.head.appendChild(ageCss);
+    }
+
+    const primaryIcon = `<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="27" cy="22" r="8" fill="#fff8ef" stroke="#234b3d" stroke-width="2.6"/><circle cx="47" cy="25" r="6.5" fill="#fff8ef" stroke="#c97959" stroke-width="2.4"/><path d="M14 53c1.7-12 6.8-19 13-19s11.3 7 13 19" fill="none" stroke="#234b3d" stroke-width="2.8" stroke-linecap="round"/><path d="M37 53c1.2-9 5-14 10-14 4.7 0 8.2 4.8 9.5 13" fill="none" stroke="#c97959" stroke-width="2.5" stroke-linecap="round"/><path d="M20 54h15" stroke="#d6b48d" stroke-width="4" stroke-linecap="round"/></svg>`;
+    const middleIcon = `<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="19" r="8" fill="#fff8ef" stroke="#234b3d" stroke-width="2.7"/><path d="M22 55c1.5-13 7-21 14-21s12.5 8 14 21" fill="none" stroke="#234b3d" stroke-width="2.8" stroke-linecap="round"/><rect x="18" y="29" width="11" height="22" rx="3" fill="#d6b48d" stroke="#c97959" stroke-width="2"/><rect x="43" y="29" width="11" height="22" rx="3" fill="#d6b48d" stroke="#c97959" stroke-width="2"/><path d="M25 32c3-5 7-8 11-8s8 3 11 8" fill="none" stroke="#c97959" stroke-width="2.4" stroke-linecap="round"/></svg>`;
+    const highIcon = `<svg viewBox="0 0 72 72" aria-hidden="true"><path d="M10 25 36 13l26 12-26 12L10 25Z" fill="#fff8ef" stroke="#234b3d" stroke-width="2.7" stroke-linejoin="round"/><path d="M20 30v14c8 7 24 7 32 0V30" fill="#fff8ef" stroke="#234b3d" stroke-width="2.7" stroke-linejoin="round"/><path d="M61 25v18" stroke="#c97959" stroke-width="2.6" stroke-linecap="round"/><circle cx="61" cy="46" r="3" fill="#c97959"/></svg>`;
+
+    agesSection.className = 'section age-nav-section';
+    agesSection.innerHTML = `
+      <div class="wrap">
+        <div class="age-nav-head">
+          <div class="eyebrow">Ανά ηλικία</div>
+          <h2 class="age-nav-title">Σε ποια ηλικιακή βαθμίδα βρίσκεται το παιδί σας;</h2>
+          <p class="age-nav-intro">Κάθε ηλικία φέρνει διαφορετικά ερωτήματα και χρειάζεται διαφορετική προσέγγιση. Επιλέξτε τη βαθμίδα που σας αφορά.</p>
+        </div>
+        <div class="age-choice-grid">
+          <a class="age-choice-card" href="dimotiko.html" aria-label="Δείτε τις υπηρεσίες για μαθητές Δημοτικού">
+            <div class="age-choice-icon">${primaryIcon}</div>
+            <h3>Μαθητές Δημοτικού</h3>
+            <p>Μαθησιακό προφίλ, δυνατά σημεία &amp; ταλέντα</p>
+            <div class="age-choice-link">Δείτε περισσότερα <span>→</span></div>
+          </a>
+          <a class="age-choice-card" href="gymnasio.html" aria-label="Δείτε τις υπηρεσίες για μαθητές Γυμνασίου">
+            <div class="age-choice-icon">${middleIcon}</div>
+            <h3>Μαθητές Γυμνασίου</h3>
+            <p>Αυτογνωσία, ενδιαφέροντα &amp; πρώτες κατευθύνσεις</p>
+            <div class="age-choice-link">Δείτε περισσότερα <span>→</span></div>
+          </a>
+          <a class="age-choice-card" href="lykeio.html" aria-label="Δείτε τις υπηρεσίες για μαθητές Λυκείου">
+            <div class="age-choice-icon">${highIcon}</div>
+            <h3>Μαθητές Λυκείου</h3>
+            <p>Σπουδές, επιλογές &amp; σχεδιασμός επόμενων βημάτων</p>
+            <div class="age-choice-link">Δείτε περισσότερα <span>→</span></div>
+          </a>
+        </div>
+      </div>`;
+  }
+
   /* Six-step process flow */
   const processSection = document.getElementById('process');
   if (processSection) {
