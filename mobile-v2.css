@@ -1,0 +1,230 @@
+/* Trochia Career — phone-first layout.
+   Every rule is isolated to phone widths so desktop remains unchanged. */
+@media (max-width:768px){
+  html{font-size:16px;scroll-padding-top:72px}
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  body{font-size:16px;line-height:1.6;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+  *,*:before,*:after{min-width:0}
+  img,svg{max-width:100%;height:auto}
+  input,textarea,select,button{font-size:16px}
+  .wrap{width:auto!important;max-width:none!important;margin-left:18px!important;margin-right:18px!important}
+  .section{padding:42px 0!important}
+  .section-head{max-width:none!important;text-align:left!important;margin:0 0 24px!important}
+  .eyebrow{font-size:.67rem!important;line-height:1.35!important;letter-spacing:.1em!important}
+  .title{font-size:2.15rem!important;line-height:1.02!important;margin:7px 0 10px!important;letter-spacing:-.015em}
+  .lead{font-size:.93rem!important;line-height:1.62!important}
+  .btn{min-height:46px!important;padding:12px 15px!important;border-radius:11px!important;font-size:.74rem!important;line-height:1.2!important}
+
+  /* header */
+  header{position:sticky;top:0}
+  nav{height:68px!important;gap:10px!important}
+  .brand{gap:8px!important;max-width:calc(100% - 54px)}
+  .brand .monogram{width:39px!important;height:39px!important}
+  .brand b{font-size:1.04rem!important;white-space:nowrap}
+  .brand small{display:none!important}
+  .desktop-links,nav>.btn.primary{display:none!important}
+  .mobile-toggle{display:inline-flex!important;width:42px!important;height:42px!important;flex:0 0 42px!important;border-radius:11px!important}
+  .mobile-menu{top:68px!important;padding:9px 18px 14px!important}
+  .mobile-menu a{padding:12px 2px!important;font-size:.82rem!important}
+
+  /* hero — purpose-built vertical composition */
+  .hero-grid{display:grid!important;grid-template-columns:1fr!important;min-height:0!important;padding:32px 0 30px!important;gap:20px!important}
+  .hero .eyebrow{max-width:92%}
+  .hero h1{font-size:2.28rem!important;line-height:1.01!important;letter-spacing:-.024em!important;margin:8px 0 15px!important}
+  .hero h1 span{display:block!important;margin-top:3px}
+  .hero p,.hero.refined-home .hero-copy-text{max-width:none!important;font-size:.94rem!important;line-height:1.62!important;margin-bottom:0!important}
+  .quick-points,.hero.refined-home .quick-points{
+    display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;
+    margin:17px 0 0!important;padding:0!important;overflow:visible!important
+  }
+  .quick-points span,.hero.refined-home .quick-points span{
+    width:100%!important;padding:8px 10px!important;text-align:center!important;
+    font-size:.7rem!important;white-space:normal!important
+  }
+  .actions{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;margin-top:19px!important}
+  .actions .btn{width:100%!important}
+  .hero-panel{width:100%!important;max-width:none!important;margin:0!important;padding:17px 18px!important;border-radius:18px!important;box-shadow:0 8px 22px rgba(45,71,54,.055)!important}
+  .hero-logo{display:grid!important;grid-template-columns:72px minmax(0,1fr)!important;column-gap:13px!important;align-items:center!important;text-align:left!important}
+  .hero-logo .monogram{grid-column:1!important;grid-row:1/4!important;width:72px!important;height:72px!important;margin:0!important}
+  .hero-wordmark{grid-column:2!important;font-size:1.63rem!important;line-height:1!important}
+  .hero-tagline{grid-column:2!important;font-size:.56rem!important;line-height:1.45!important;letter-spacing:.075em!important;margin-top:2px!important}
+  .hero-logo>div[style]{display:none!important}
+  .hero-quote{grid-column:1/-1!important;text-align:left!important;font-size:1.02rem!important;line-height:1.28!important;margin:13px 0 0!important;padding:13px 0 0!important}
+
+  /* age cards */
+  .age-nav-section .age-nav-head{max-width:none!important;margin:0 0 23px!important}
+  .age-nav-section .age-nav-title{font-size:2.12rem!important;line-height:1.02!important}
+  .age-nav-section .age-nav-intro{font-size:.91rem!important;line-height:1.6!important}
+  .age-choice-grid{display:grid!important;grid-template-columns:1fr!important;gap:11px!important}
+  .age-choice-card{
+    width:100%!important;min-height:0!important;padding:16px!important;border-radius:16px!important;
+    display:grid!important;grid-template-columns:64px minmax(0,1fr)!important;
+    grid-template-areas:"icon title" "icon desc" "icon link"!important;
+    column-gap:13px!important;align-items:center!important;text-align:left!important
+  }
+  .age-choice-icon{grid-area:icon!important;width:60px!important;height:60px!important;margin:0!important}
+  .age-choice-icon svg{width:38px!important;height:38px!important}
+  .age-choice-card h3{grid-area:title!important;font-size:1.35rem!important;line-height:1.04!important;margin:0 0 4px!important}
+  .age-choice-card p{grid-area:desc!important;font-size:.79rem!important;line-height:1.46!important;margin:0 0 7px!important;max-width:none!important}
+  .age-choice-link{grid-area:link!important;margin:0!important;font-size:.66rem!important}
+
+  /* familiar questions — concise rows, no horizontal carousel */
+  .help-head{max-width:none!important;text-align:left!important;margin:0 0 21px!important}
+  .help-head h2{font-size:2.12rem!important;line-height:1.02!important;margin:7px 0 10px!important}
+  .help-head p{font-size:.91rem!important;line-height:1.6!important}
+  .help-grid{
+    display:grid!important;grid-template-columns:1fr!important;gap:9px!important;
+    overflow:visible!important;margin:0!important;padding:0!important
+  }
+  .help-card,.help-card:last-child{
+    min-height:0!important;width:100%!important;padding:14px 15px!important;
+    display:grid!important;grid-template-columns:38px minmax(0,1fr)!important;gap:11px!important;
+    align-items:center!important;border-radius:14px!important
+  }
+  .help-mark{width:36px!important;height:36px!important;margin:0!important}
+  .help-card blockquote{margin:0!important;font-size:1.16rem!important;line-height:1.2!important}
+  .help-close{max-width:none!important;text-align:left!important;margin:17px 0 0!important;font-size:.88rem!important;line-height:1.58!important}
+
+  /* process — actual mobile timeline, no side scrolling */
+  .process-section{overflow:visible!important}
+  .process-section .process-head{margin:0 0 22px!important}
+  .process-section .process-title{font-size:2.12rem!important;line-height:1.02!important}
+  .process-section .process-intro{font-size:.91rem!important;line-height:1.6!important}
+  .process-flow-wrap{overflow:visible!important;margin:0!important;padding:0!important}
+  .process-flow{
+    display:grid!important;min-width:0!important;width:100%!important;gap:0!important;align-items:stretch!important
+  }
+  .process-arrow{display:none!important}
+  .process-step{
+    position:relative!important;width:100%!important;max-width:none!important;flex:none!important;
+    display:grid!important;grid-template-columns:58px minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;column-gap:14px!important;row-gap:3px!important;
+    text-align:left!important;padding:15px 0!important;border-bottom:1px solid #e7d8c8!important
+  }
+  .process-step:last-child{border-bottom:0!important}
+  .process-step-num{
+    position:absolute!important;left:0!important;top:10px!important;z-index:2!important;
+    width:24px!important;height:24px!important;border-radius:50%!important;background:#fffdfa!important;
+    border:1px solid #e2cfbd!important;display:grid!important;place-items:center!important;
+    font-size:.61rem!important;margin:0!important;color:#c97959!important
+  }
+  .process-icon{
+    grid-column:1!important;grid-row:1/3!important;width:54px!important;height:54px!important;
+    margin:0!important;align-self:start!important
+  }
+  .process-icon svg{width:30px!important;height:30px!important}
+  .process-step h3{
+    grid-column:2!important;grid-row:1!important;max-width:none!important;
+    margin:1px 0 2px!important;font-size:1.2rem!important;line-height:1.08!important
+  }
+  .process-step p{
+    grid-column:2!important;grid-row:2!important;max-width:none!important;
+    margin:0!important;font-size:.8rem!important;line-height:1.5!important
+  }
+  .process-note{display:none!important}
+
+  /* packages — full-width native mobile cards */
+  #packages.refined-packages .section-head{max-width:none!important}
+  .prices{
+    display:grid!important;grid-template-columns:1fr!important;gap:11px!important;
+    overflow:visible!important;margin:0!important;padding:0!important
+  }
+  .price{
+    width:100%!important;min-width:0!important;min-height:0!important;padding:18px!important;
+    border-radius:16px!important;box-shadow:none!important
+  }
+  .price h3{text-align:left!important;font-size:1.38rem!important;line-height:1.08!important}
+  .price .age{text-align:left!important;font-size:.65rem!important;margin-top:4px!important}
+  .price .amount{text-align:left!important;font-size:1.95rem!important;margin:11px 0 13px!important}
+  .price ul{font-size:.81rem!important;line-height:1.5!important;margin-bottom:0!important}
+  .package-guidance{max-width:none!important;margin:16px 0 0!important;padding:14px 15px!important;text-align:left!important;font-size:.83rem!important;line-height:1.55!important}
+
+  /* about — readable article, not mini desktop */
+  #about.refined-about{padding:42px 0!important}
+  #about.refined-about .about-grid{display:grid!important;grid-template-columns:1fr!important;gap:14px!important}
+  .refined-about .about-card{
+    display:grid!important;grid-template-columns:48px minmax(0,1fr)!important;gap:11px!important;
+    align-items:center!important;padding:14px 15px!important;border-radius:15px!important
+  }
+  .refined-about .about-card .monogram{width:48px!important;height:48px!important;margin:0!important}
+  .refined-about .about-card blockquote{font-size:.98rem!important;line-height:1.3!important;margin:0!important}
+  .refined-about .about-copy .eyebrow{margin-top:2px!important}
+  .refined-about .about-copy h2{font-size:2.08rem!important;line-height:1!important;margin:4px 0!important}
+  .refined-about .about-role{font-size:.75rem!important;line-height:1.4!important;margin-bottom:13px!important}
+  .refined-about .about-copy>p:not(.about-benefit){
+    font-size:.91rem!important;line-height:1.7!important;margin:0 0 13px!important;color:#5d6761!important
+  }
+  .refined-about .about-copy>p:nth-of-type(2),.refined-about .about-copy>p:nth-of-type(3){
+    padding:13px 0!important;background:transparent!important;border:0!important;
+    border-top:1px solid #eadfd4!important;border-radius:0!important
+  }
+  .refined-about .about-benefit{
+    padding:14px 15px!important;margin:14px 0 0!important;font-size:.9rem!important;line-height:1.58!important;
+    border-radius:0 12px 12px 0!important
+  }
+  .refined-about .facts{
+    display:grid!important;grid-template-columns:1fr!important;gap:8px!important;
+    overflow:visible!important;margin:14px 0 0!important;padding:0!important
+  }
+  .refined-about .fact{
+    width:100%!important;min-width:0!important;padding:12px 13px 12px 15px!important;
+    border:1px solid #e7d8c8!important;border-left:3px solid #c97959!important;border-top:1px solid #e7d8c8!important;
+    border-radius:11px!important;background:#fffdfa!important;font-size:.79rem!important;line-height:1.5!important
+  }
+  .refined-about .fact b{font-size:.84rem!important;margin-bottom:3px!important}
+
+  /* FAQ + contact */
+  .contact-grid{display:grid!important;grid-template-columns:1fr!important;gap:24px!important}
+  .faq details{padding:13px 0!important}
+  .faq summary{font-size:.91rem!important;line-height:1.42!important;align-items:flex-start!important}
+  .faq p{font-size:.85rem!important;line-height:1.6!important}
+  .contact{padding:19px!important;border-radius:17px!important}
+  .contact h3{font-size:1.95rem!important;line-height:1!important;margin:5px 0 10px!important}
+  .contact input,.contact textarea{width:100%!important;font-size:16px!important;padding:13px 12px!important;border-radius:10px!important}
+  .contact form .btn{width:100%!important}
+  .consent{font-size:.72rem!important;line-height:1.45!important}
+
+  /* footer */
+  footer{padding:28px 0!important}
+  .foot{display:grid!important;grid-template-columns:1fr!important;gap:16px!important}
+  .foot>div{width:100%!important}
+  .foot a{font-size:.78rem!important}
+
+  /* age detail pages */
+  .subhero{padding:36px 0 32px!important}
+  .back-link{font-size:.74rem!important;margin-bottom:13px!important}
+  .breadcrumb{font-size:.65rem!important}
+  .subhero h1{font-size:2.3rem!important;line-height:.99!important;margin:10px 0 14px!important;letter-spacing:-.02em}
+  .subhero p{font-size:.93rem!important;line-height:1.62!important;margin:0!important}
+  .signal-grid{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;overflow:visible!important;margin:0!important;padding:0!important}
+  .signal{width:100%!important;min-width:0!important;padding:17px!important;border-radius:15px!important}
+  .signal strong{font-size:1.22rem!important;line-height:1.2!important}
+  .signal p{font-size:.83rem!important;line-height:1.55!important}
+  .two-col{display:grid!important;grid-template-columns:1fr!important;gap:12px!important}
+  .info-panel{padding:18px!important;border-radius:16px!important}
+  .info-panel h2{font-size:1.78rem!important;line-height:1.04!important;margin-bottom:12px!important}
+  .info-list{gap:9px!important}
+  .info-list li{font-size:.87rem!important;line-height:1.54!important;padding-left:19px!important}
+  .note{font-size:.78rem!important;line-height:1.55!important;padding:10px 12px!important}
+  .package-callout{padding:18px!important;border-radius:16px!important}
+  .package-callout h3{font-size:1.65rem!important}
+  .package-callout p,.package-callout li{font-size:.85rem!important;line-height:1.55!important}
+  .package-callout .btn{width:100%!important}
+}
+
+@media (max-width:390px){
+  .wrap{margin-left:14px!important;margin-right:14px!important}
+  .section{padding:38px 0!important}
+  .hero-grid{padding:28px 0 26px!important}
+  .hero h1{font-size:2.08rem!important}
+  .title,.age-nav-section .age-nav-title,.help-head h2,.process-section .process-title{font-size:2rem!important}
+  .quick-points,.hero.refined-home .quick-points{grid-template-columns:1fr!important}
+  .age-choice-card{grid-template-columns:58px minmax(0,1fr)!important;padding:14px!important;column-gap:11px!important}
+  .age-choice-icon{width:54px!important;height:54px!important}
+  .age-choice-icon svg{width:35px!important;height:35px!important}
+  .age-choice-card h3{font-size:1.27rem!important}
+  .process-step{grid-template-columns:52px minmax(0,1fr)!important;column-gap:12px!important}
+  .process-icon{width:49px!important;height:49px!important}
+  .hero-logo{grid-template-columns:64px minmax(0,1fr)!important}
+  .hero-logo .monogram{width:64px!important;height:64px!important}
+}
