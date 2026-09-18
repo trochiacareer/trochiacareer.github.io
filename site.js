@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!document.querySelector('link[data-home-refinements]')) {
     const homeCss = document.createElement('link');
     homeCss.rel = 'stylesheet';
-    homeCss.href = 'home-refinements.css?v=20260915-1';
+    homeCss.href = 'home-refinements.css?v=20260918-1';
     homeCss.setAttribute('data-home-refinements','true');
     document.head.appendChild(homeCss);
   }
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!document.querySelector('link[data-age-navigation]')) {
       const ageCss = document.createElement('link');
       ageCss.rel = 'stylesheet';
-      ageCss.href = 'age-navigation.css?v=20260915-1';
+      ageCss.href = 'age-navigation.css?v=20260918-1';
       ageCss.setAttribute('data-age-navigation','true');
       document.head.appendChild(ageCss);
     }
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!document.querySelector('link[data-process-flow]')) {
       const processCss = document.createElement('link');
       processCss.rel = 'stylesheet';
-      processCss.href = 'process-flow.css?v=20260915-3';
+      processCss.href = 'process-flow.css?v=20260918-1';
       processCss.setAttribute('data-process-flow','true');
       document.head.appendChild(processCss);
     }
@@ -217,6 +217,15 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         <div class="process-note">Στο κινητό σύρετε οριζόντια για να δείτε όλα τα βήματα.</div>
       </div>`;
+  }
+
+  /* Phone-first layout loaded last so it can adapt all components without affecting desktop */
+  if (!document.querySelector('link[data-mobile-v2]')) {
+    const mobileCss = document.createElement('link');
+    mobileCss.rel = 'stylesheet';
+    mobileCss.href = 'mobile-v2.css?v=20260918-1';
+    mobileCss.setAttribute('data-mobile-v2','true');
+    document.head.appendChild(mobileCss);
   }
 
   if (window.lucide) lucide.createIcons();
