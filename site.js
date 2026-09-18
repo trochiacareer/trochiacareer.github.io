@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!document.querySelector('link[data-mobile-v2]')) {
     const mobileCss = document.createElement('link');
     mobileCss.rel = 'stylesheet';
-    mobileCss.href = 'mobile-v2.css?v=20260918-1';
+    mobileCss.href = 'mobile-v2.css?v=20260918-2';
     mobileCss.setAttribute('data-mobile-v2','true');
     document.head.appendChild(mobileCss);
   }
