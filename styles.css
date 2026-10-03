@@ -173,3 +173,32 @@ footer{background:var(--green);color:#f7f2ed;padding:38px 0}
   .signal-grid{grid-template-columns:1fr}
   .two-col{gap:16px}
 }
+
+/* Readability and navigation refinement — October 2026 */
+:root{--muted:#202924}
+nav .desktop-links a[href="#about"],nav .desktop-links a[href="index.html#about"],nav .mobile-menu a[href="#about"],nav .mobile-menu a[href="index.html#about"]{display:none!important}
+html body .title{font-size:clamp(2rem,3vw,2.7rem)!important;line-height:1.08!important}
+html body .hero h1{font-size:clamp(2.3rem,3.7vw,3.3rem)!important;line-height:1.04!important}
+html body .subhero h1{font-size:clamp(2.35rem,4vw,3.45rem)!important;line-height:1.03!important}
+html body .help-head h2,html body .age-nav-section .age-nav-title,html body .process-section .process-title{font-size:clamp(2rem,3vw,2.7rem)!important;line-height:1.08!important}
+html body .about-copy h2{font-size:2.3rem!important}
+html body .faq h2{font-size:2.15rem!important;line-height:1.08!important}
+html body .contact h3{font-size:1.8rem!important;line-height:1.08!important}
+html body p,html body li,html body .lead,html body .hero p,html body .subhero p,html body .signal p,html body .info-list li,html body .note,html body .faq p,html body .about-copy p,html body .fact,html body .package-guidance,html body .age,html body .age-choice-card p,html body .age-nav-intro,html body .process-step p,html body .process-intro,html body .help-head p,html body .help-close,html body .consent,html body .brand small,html body .meta{color:#202924!important;opacity:1!important}
+html body .price ul,html body .price li,html body .process-card p,html body .age-card p{color:#202924!important}
+html body footer,html body footer *,html body .package-callout,html body .package-callout p,html body .package-callout li{color:#f7f2ed!important}
+html body .package-callout .btn{color:#2d4736!important}
+html body .age,html body .quick-points span,html body .age-tags span,html body .fact,html body .price ul,html body .price li{font-size:max(.82rem,13px)!important;line-height:1.5!important}
+html body .lead,html body .hero p,html body .subhero p{font-weight:500!important}
+@media(max-width:768px){
+  html body .hero h1{font-size:2.05rem!important;line-height:1.07!important}
+  html body .title,html body .age-nav-section .age-nav-title,html body .help-head h2,html body .process-section .process-title{font-size:1.85rem!important;line-height:1.1!important}
+  html body .subhero h1{font-size:2rem!important;line-height:1.08!important}
+  html body .info-panel h2{font-size:1.55rem!important;line-height:1.08!important}
+  html body .faq h2{font-size:1.85rem!important;line-height:1.1!important}
+  html body .contact h3{font-size:1.7rem!important;line-height:1.1!important}
+  html body .about-copy h2{font-size:1.9rem!important}
+  html body .lead,html body .hero p,html body .subhero p,html body .age-nav-intro,html body .help-head p,html body .process-intro{font-size:.95rem!important;line-height:1.65!important}
+  html body .signal p,html body .faq p,html body .info-list li,html body .process-step p,html body .age-choice-card p{font-size:.88rem!important;line-height:1.58!important}
+  html body .consent{font-size:.78rem!important;line-height:1.5!important}
+}
