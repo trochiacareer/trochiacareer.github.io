@@ -15,6 +15,30 @@
   .lead{font-size:.93rem!important;line-height:1.62!important}
   .btn{min-height:46px!important;padding:12px 15px!important;border-radius:11px!important;font-size:.74rem!important;line-height:1.2!important}
 
+  /* Full, balanced alignment for readable body copy on phones */
+  .hero p,
+  .lead,
+  .age-nav-section .age-nav-intro,
+  .age-choice-card p,
+  .help-head p,
+  .help-close,
+  .process-step p,
+  .price li,
+  .package-guidance,
+  .refined-about .about-copy>p,
+  .faq p,
+  .subhero p,
+  .signal p,
+  .info-list li,
+  .note,
+  .package-callout p,
+  .package-callout li{
+    text-align:justify!important;
+    text-justify:inter-word;
+    hyphens:auto;
+    -webkit-hyphens:auto
+  }
+
   /* header */
   header{position:sticky;top:0}
   nav{height:68px!important;gap:10px!important}
@@ -203,8 +227,17 @@
   .breadcrumb{font-size:.65rem!important}
   .subhero h1{font-size:2.3rem!important;line-height:.99!important;margin:10px 0 14px!important;letter-spacing:-.02em}
   .subhero p{font-size:.93rem!important;line-height:1.62!important;margin:0!important}
-  .signal-grid{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;overflow:visible!important;margin:0!important;padding:0!important}
-  .signal{width:100%!important;min-width:0!important;padding:17px!important;border-radius:15px!important}
+  .signal-grid{
+    display:flex!important;gap:10px!important;overflow-x:auto!important;overflow-y:hidden!important;
+    margin:0 -18px!important;padding:0 18px 12px!important;
+    scroll-snap-type:x mandatory!important;scroll-padding-left:18px!important;
+    -webkit-overflow-scrolling:touch!important;scrollbar-width:none!important
+  }
+  .signal-grid::-webkit-scrollbar{display:none!important}
+  .signal{
+    flex:0 0 86%!important;width:auto!important;min-width:0!important;
+    padding:17px!important;border-radius:15px!important;scroll-snap-align:start!important
+  }
   .signal strong{font-size:1.22rem!important;line-height:1.2!important}
   .signal p{font-size:.83rem!important;line-height:1.55!important}
   .two-col{display:grid!important;grid-template-columns:1fr!important;gap:12px!important}
@@ -230,6 +263,8 @@
   .help-card,.help-card:last-child{flex-basis:87%!important}
   .prices{margin-left:-14px!important;margin-right:-14px!important;padding-left:14px!important;padding-right:14px!important;scroll-padding-left:14px!important}
   .price{flex-basis:89%!important}
+  .signal-grid{margin-left:-14px!important;margin-right:-14px!important;padding-left:14px!important;padding-right:14px!important;scroll-padding-left:14px!important}
+  .signal{flex-basis:89%!important}
   .age-choice-card{grid-template-columns:58px minmax(0,1fr)!important;padding:14px!important;column-gap:11px!important}
   .age-choice-icon{width:54px!important;height:54px!important}
   .age-choice-icon svg{width:35px!important;height:35px!important}
