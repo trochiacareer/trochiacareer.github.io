@@ -299,3 +299,49 @@
     line-height: 1.2 !important;
   }
 }
+
+
+/* Elegant, lighter heading typography across the site — 2026-10-28 */
+html body h1,
+html body h2,
+html body h3,
+html body .title,
+html body .age-nav-section .age-nav-title,
+html body .help-head h2,
+html body .process-section .process-title,
+html body .faq h2,
+html body .info-panel h2,
+html body .contact h3,
+html body .about-copy h2,
+html body .price h3,
+html body .help-card h3,
+html body .age-choice-card h3,
+html body .process-card h3 {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.015em;
+}
+
+/* Keep lower section headings visibly refined on phones too */
+@media screen and (max-width: 768px) {
+  html body main h2,
+  html body main .title,
+  html body main .age-nav-section .age-nav-title,
+  html body main .help-head h2,
+  html body main .process-section .process-title,
+  html body main .faq h2,
+  html body main .about-copy h2 {
+    font-size: 1.55rem !important;
+    line-height: 1.22 !important;
+    font-weight: 500 !important;
+  }
+  html body main h3,
+  html body main .price h3,
+  html body main .help-card h3,
+  html body main .age-choice-card h3,
+  html body main .contact h3 {
+    font-size: 1.28rem !important;
+    line-height: 1.25 !important;
+    font-weight: 500 !important;
+  }
+}
