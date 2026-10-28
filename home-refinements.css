@@ -37,7 +37,7 @@
   .section{padding:44px 0}
   .section-head{max-width:none;margin:0 0 24px;text-align:left}
   .eyebrow{font-size:.68rem;letter-spacing:.1em;line-height:1.35}
-  .title{font-size:clamp(2.05rem,9.5vw,2.6rem);line-height:1.02;margin:7px 0 10px}
+  .title{font-size:clamp(1.8rem,7.5vw,2.2rem);line-height:1.1;margin:7px 0 10px}
   .lead{font-size:.94rem;line-height:1.62}
   .btn{min-height:46px;padding:12px 16px;border-radius:11px;font-size:.75rem}
 
@@ -52,7 +52,7 @@
   .mobile-menu a{padding:12px 4px;font-size:.8rem}
 
   .hero-grid{grid-template-columns:1fr!important;min-height:auto!important;padding:34px 0 30px!important;gap:22px!important}
-  .hero h1{font-size:clamp(2.1rem,10vw,2.65rem);line-height:1.01;letter-spacing:-.02em;margin:8px 0 15px}
+  .hero h1{font-size:clamp(1.85rem,8vw,2.25rem);line-height:1.1;letter-spacing:-.02em;margin:8px 0 15px}
   .hero h1 span{display:block}
   .hero.refined-home .hero-copy-text,.hero p{font-size:.94rem!important;line-height:1.62;max-width:none}
   .quick-points{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;margin:16px -14px 0;padding:0 14px 5px;scrollbar-width:none;scroll-snap-type:x proximity}
@@ -67,7 +67,7 @@
   .hero-quote{font-size:1.08rem;line-height:1.25;margin-top:16px;padding-top:15px}
 
   .age-nav-section .age-nav-head{max-width:none!important;margin:0 0 24px!important}
-  .age-nav-section .age-nav-title{font-size:clamp(2.05rem,9vw,2.55rem)!important;line-height:1.03!important}
+  .age-nav-section .age-nav-title{font-size:clamp(1.8rem,7.5vw,2.2rem)!important;line-height:1.1!important}
   .age-nav-section .age-nav-intro{font-size:.92rem!important;line-height:1.58!important}
   .age-choice-grid{grid-template-columns:1fr!important;gap:12px!important}
   .age-choice-card{width:100%;min-height:0!important;padding:17px!important;border-radius:16px!important;display:grid!important;grid-template-columns:72px minmax(0,1fr)!important;grid-template-areas:"icon title" "icon desc" "icon link"!important;column-gap:15px!important;align-items:center!important;text-align:left!important}
@@ -102,12 +102,12 @@
   .refined-about .fact b{font-size:.86rem!important;margin-bottom:4px!important}
 
   .contact-grid{grid-template-columns:1fr!important;gap:24px}
-  .faq h2{font-size:2.2rem!important;margin-bottom:12px!important}
+  .faq h2{font-size:1.8rem!important;margin-bottom:12px!important}
   .faq details{padding:13px 0}
   .faq summary{font-size:.9rem;line-height:1.45;align-items:flex-start}
   .faq p{font-size:.86rem;line-height:1.6}
   .contact{padding:20px;border-radius:18px}
-  .contact h3{font-size:2rem;margin:5px 0 10px}
+  .contact h3{font-size:1.6rem;margin:5px 0 10px}
   .contact input,.contact textarea{font-size:16px;padding:13px 12px;border-radius:10px}
   .contact form .btn{width:100%}
   .consent{font-size:.72rem;line-height:1.45}
@@ -119,7 +119,7 @@
   .subhero{padding:40px 0 34px}
   .back-link{font-size:.74rem;margin-bottom:14px}
   .breadcrumb{font-size:.66rem}
-  .subhero h1{font-size:clamp(2.2rem,10vw,2.75rem);line-height:.98;margin:10px 0 14px}
+  .subhero h1{font-size:clamp(1.85rem,8vw,2.25rem);line-height:1.1;margin:10px 0 14px}
   .subhero p{font-size:.94rem;line-height:1.62;margin-bottom:0}
   .signal-grid{display:flex!important;grid-template-columns:none!important;overflow-x:auto;gap:12px;margin:0 -14px;padding:2px 14px 12px;scroll-snap-type:x mandatory;scrollbar-width:none}
   .signal-grid::-webkit-scrollbar{display:none}
