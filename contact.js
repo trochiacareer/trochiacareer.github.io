@@ -24,8 +24,9 @@
       endpoint.pathname = '/ajax' + endpoint.pathname;
       const response = await fetch(endpoint.href, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(data),
+        // Form encoding avoids an unnecessary cross-origin OPTIONS preflight.
+        headers: { 'Accept': 'application/json' },
+        body: new URLSearchParams(data),
         signal: controller.signal
       });
       if (!response.ok) throw new Error('HTTP response failed');
