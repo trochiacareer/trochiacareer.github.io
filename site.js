@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!document.querySelector('link[data-home-refinements]')) {
     const homeCss = document.createElement('link');
     homeCss.rel = 'stylesheet';
-    homeCss.href = 'home-refinements.css?v=20260918-1';
+    homeCss.href = 'home-refinements.css?v=20261028-2';
     homeCss.setAttribute('data-home-refinements','true');
     document.head.appendChild(homeCss);
   }
