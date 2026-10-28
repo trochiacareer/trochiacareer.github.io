@@ -4,7 +4,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.7 Inter,system-ui,sans-serif}
 a{text-decoration:none;color:inherit}
 button,input,textarea{font:inherit}
 img,svg{max-width:100%}
@@ -16,7 +16,7 @@ img,svg{max-width:100%}
 .section.alt{background:var(--cream2)}
 .section-head{text-align:center;max-width:760px;margin:0 auto 34px}
 .eyebrow{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terr);font-weight:800}
-.title{font-size:clamp(2.35rem,4vw,3.35rem);line-height:1.02;margin:8px 0 12px;font-weight:600}
+.title{font-size:clamp(2.1rem,3.6vw,3rem);line-height:1.02;margin:8px 0 12px;font-weight:600}
 .lead{color:var(--muted);font-size:1rem;margin:0}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:10px;border:1px solid #d9c6b2;font-size:.78rem;text-transform:uppercase;letter-spacing:.045em;font-weight:800;background:#fff;cursor:pointer}
 .btn.primary{background:var(--green);border-color:var(--green);color:#fff}
@@ -38,9 +38,9 @@ nav{height:80px;display:flex;align-items:center;gap:22px}
 .mobile-menu a:last-child{border-bottom:none}
 .hero{background:linear-gradient(180deg,#fffdfa,#fbf4eb);border-bottom:1px solid var(--line)}
 .hero-grid{min-height:590px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.45rem,4.25vw,3.9rem);line-height:1;letter-spacing:-.025em;margin:10px 0 20px}
+.hero h1{font-size:clamp(2.2rem,3.8vw,3.5rem);line-height:1;letter-spacing:-.025em;margin:10px 0 20px}
 .hero h1 span{display:block;color:var(--terr);font-style:italic;font-weight:500}
-.hero p{font-size:1.02rem;max-width:640px;color:var(--muted)}
+.hero p{font-size:.98rem;max-width:640px;color:var(--muted)}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
 .hero-panel{border:1px solid var(--line);border-radius:28px;background:var(--cream);padding:34px;box-shadow:var(--shadow)}
 .hero-logo{text-align:center}
@@ -75,7 +75,7 @@ nav{height:80px;display:flex;align-items:center;gap:22px}
 .about-card{background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:30px}
 .about-card .monogram{width:96px;height:96px}
 .about-card blockquote{font:600 1.5rem/1.2 "Cormorant Garamond",serif;margin:20px 0 0}
-.about-copy h2{font-size:2.65rem;line-height:1;margin:6px 0 6px}
+.about-copy h2{font-size:2.35rem;line-height:1.05;margin:6px 0 6px}
 .about-role{font-size:.82rem;font-weight:800;color:var(--green);margin-bottom:18px}
 .about-copy p{color:var(--muted);margin:0 0 14px}
 .about-benefit{padding:15px 17px;border-left:3px solid var(--terr);background:#fff;border-radius:0 12px 12px 0;color:var(--ink)!important;margin-top:18px!important}
@@ -104,7 +104,7 @@ footer{background:var(--green);color:#f7f2ed;padding:38px 0}
 /* age detail pages */
 .subhero{background:linear-gradient(180deg,#fffdfa,#fbf4eb);border-bottom:1px solid var(--line);padding:70px 0 56px}
 .breadcrumb{font-size:.72rem;color:var(--terr);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-.subhero h1{font-size:clamp(2.8rem,5vw,4.4rem);line-height:.95;margin:14px 0 18px}
+.subhero h1{font-size:clamp(2.45rem,4.5vw,3.9rem);line-height:.95;margin:14px 0 18px}
 .subhero p{max-width:760px;color:var(--muted);font-size:1.02rem}
 .signal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .signal{border:1px solid var(--line);background:#fff;border-radius:18px;padding:22px}
@@ -177,13 +177,13 @@ footer{background:var(--green);color:#f7f2ed;padding:38px 0}
 /* Readability and navigation refinement — October 2026 */
 :root{--muted:#202924}
 nav .desktop-links a[href="#about"],nav .desktop-links a[href="index.html#about"],nav .mobile-menu a[href="#about"],nav .mobile-menu a[href="index.html#about"]{display:none!important}
-html body .title{font-size:clamp(2rem,3vw,2.7rem)!important;line-height:1.08!important}
-html body .hero h1{font-size:clamp(2.3rem,3.7vw,3.3rem)!important;line-height:1.04!important}
-html body .subhero h1{font-size:clamp(2.35rem,4vw,3.45rem)!important;line-height:1.03!important}
-html body .help-head h2,html body .age-nav-section .age-nav-title,html body .process-section .process-title{font-size:clamp(2rem,3vw,2.7rem)!important;line-height:1.08!important}
-html body .about-copy h2{font-size:2.3rem!important}
-html body .faq h2{font-size:2.15rem!important;line-height:1.08!important}
-html body .contact h3{font-size:1.8rem!important;line-height:1.08!important}
+html body .title{font-size:clamp(1.85rem,2.7vw,2.45rem)!important;line-height:1.08!important}
+html body .hero h1{font-size:clamp(2.1rem,3.4vw,3rem)!important;line-height:1.04!important}
+html body .subhero h1{font-size:clamp(2.15rem,3.6vw,3.1rem)!important;line-height:1.03!important}
+html body .help-head h2,html body .age-nav-section .age-nav-title,html body .process-section .process-title{font-size:clamp(1.85rem,2.7vw,2.45rem)!important;line-height:1.08!important}
+html body .about-copy h2{font-size:2.1rem!important}
+html body .faq h2{font-size:1.95rem!important;line-height:1.08!important}
+html body .contact h3{font-size:1.65rem!important;line-height:1.08!important}
 html body p,html body li,html body .lead,html body .hero p,html body .subhero p,html body .signal p,html body .info-list li,html body .note,html body .faq p,html body .about-copy p,html body .fact,html body .package-guidance,html body .age,html body .age-choice-card p,html body .age-nav-intro,html body .process-step p,html body .process-intro,html body .help-head p,html body .help-close,html body .consent,html body .brand small,html body .meta{color:#202924!important;opacity:1!important}
 html body .price ul,html body .price li,html body .process-card p,html body .age-card p{color:#202924!important}
 html body footer,html body footer *,html body .package-callout,html body .package-callout p,html body .package-callout li{color:#f7f2ed!important}
