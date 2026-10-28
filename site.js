@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!document.querySelector('link[data-home-refinements]')) {
     const homeCss = document.createElement('link');
     homeCss.rel = 'stylesheet';
-    homeCss.href = 'home-refinements.css?v=20261028-3';
+    homeCss.href = 'home-refinements.css?v=20261028-4';
     homeCss.setAttribute('data-home-refinements','true');
     document.head.appendChild(homeCss);
   }
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!document.querySelector('link[data-age-navigation]')) {
       const ageCss = document.createElement('link');
       ageCss.rel = 'stylesheet';
-      ageCss.href = 'age-navigation.css?v=20261028-3';
+      ageCss.href = 'age-navigation.css?v=20261028-4';
       ageCss.setAttribute('data-age-navigation','true');
       document.head.appendChild(ageCss);
     }
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!document.querySelector('link[data-mobile-v2]')) {
     const mobileCss = document.createElement('link');
     mobileCss.rel = 'stylesheet';
-    mobileCss.href = 'mobile-v2.css?v=20261028-3';
+    mobileCss.href = 'mobile-v2.css?v=20261028-4';
     mobileCss.setAttribute('data-mobile-v2','true');
     document.head.appendChild(mobileCss);
   }
