@@ -274,3 +274,28 @@
   .hero-logo{grid-template-columns:64px minmax(0,1fr)!important}
   .hero-logo .monogram{width:64px!important;height:64px!important}
 }
+
+/* Final mobile typography override — 2026-10-28.
+   Keep headings visibly compact on phones; deliberately placed last to win the cascade. */
+@media screen and (max-width: 768px) {
+  html body .hero h1,
+  html body main .subhero h1 {
+    font-size: 1.62rem !important;
+    line-height: 1.16 !important;
+    letter-spacing: -0.02em !important;
+  }
+  html body main .title,
+  html body main .age-nav-section .age-nav-title,
+  html body main .help-head h2,
+  html body main .process-section .process-title,
+  html body main .faq h2 {
+    font-size: 1.52rem !important;
+    line-height: 1.18 !important;
+    letter-spacing: -0.01em !important;
+  }
+  html body main .info-panel h2,
+  html body main .contact h3 {
+    font-size: 1.38rem !important;
+    line-height: 1.2 !important;
+  }
+}
